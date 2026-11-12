@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Webfast | Jasa Pembuatan &amp; Perbaikan Website</title>
-  <meta name="description" content="Webfast adalah jasa pembuatan dan perbaikan website: portofolio, tugas akademik, company profile, dan toko online. Pengerjaan rapi, waktu jelas, harga transparan.">
-  <meta name="theme-color" content="#141713">
+  <title>Webfast | Jasa Pembuatan &amp; Perbaikan Website Cepat, Rapi &amp; Bergaransi</title>
+  <meta name="description" content="Webfast adalah jasa pembuatan dan perbaikan website profesional: portofolio, tugas akademik, company profile bisnis, dan toko online. Pengerjaan cepat, waktu jelas, kode 100% milik Anda.">
+  <meta name="theme-color" content="#14160f">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Webfast — Jasa Pembuatan &amp; Perbaikan Website">
-  <meta property="og:description" content="Website yang cepat, rapi, dan siap dipakai. Landing page, company profile, dan toko online.">
+  <meta property="og:description" content="Website yang cepat, rapi, dan siap dipakai. Landing page, company profile, dan toko online tanpa perantara.">
   <meta property="og:locale" content="id_ID">
 
   <link rel="icon" type="image/png" href="assets/logonobg.png">
@@ -17,32 +17,43 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/styles.css?v=1.1">
   <script>document.documentElement.classList.replace('no-js', 'js');</script>
 </head>
 <body id="top">
+  <!-- Reading Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
   <a class="skip-link" href="#main">Lompat ke konten utama</a>
 
+  <!-- ============================ HEADER ============================ -->
   <header class="site-header" id="siteHeader">
     <div class="shell header-inner">
       <a class="brand" href="#top" aria-label="Webfast, kembali ke atas">
         <span class="brand-logo">
-          <img src="assets/logonobg.png" alt="Webfast" width="600" height="400">
+          <img src="assets/logonobg.png" alt="Logo Webfast" width="600" height="400">
         </span>
       </a>
 
       <nav class="primary-nav" id="primaryNav" aria-label="Navigasi utama">
         <a href="#tentang">Tentang</a>
+        <a href="#alur">Alur Kerja</a>
         <a href="#proyek">Proyek</a>
         <a href="#keahlian">Keahlian</a>
         <a href="#harga">Harga</a>
+        <a href="#estimator">Kalkulator</a>
         <a href="#tim">Tim</a>
+        <a href="#faq">FAQ</a>
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn-solid btn-sm header-cta" href="#kontak">Mulai proyek</a>
+        <div class="header-status" title="Slot pengerjaan aktif">
+          <span class="status-dot"></span>
+          <span>Buka 2 Slot</span>
+        </div>
+        <a class="btn btn-solid btn-sm header-cta" href="#kontak">Mulai Proyek</a>
         <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Buka menu navigasi">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -57,37 +68,49 @@
     <section class="hero">
       <div class="shell hero-grid">
         <div class="hero-copy">
+          <div class="hero-tagline">
+            <span class="badge badge-brass">• Jasa Pembuatan Website Profesional</span>
+          </div>
           <h1 class="hero-title">
             Website yang membuat<br>
             bisnis Anda
-            <em>tampak serius.</em>
+            <em>tampak serius &amp; terpercaya.</em>
           </h1>
           <p class="hero-lede">
-            Webfast membangun website portofolio, project akademik, company profile,
-            hingga toko online dengan sistem pembayaran. Dikerjakan sendiri, tanpa
-            perantara, dengan hasil yang bisa Anda kelola.
+            Webfast membangun website portofolio, tugas akademik, company profile,
+            hingga toko online dengan sistem pembayaran terintegrasi. Dikerjakan langsung
+            oleh software engineer berlatar belakang IT, tanpa sales perantara, dengan
+            kode rapi yang 100% menjadi milik Anda.
           </p>
 
           <div class="hero-actions">
             <a class="btn btn-solid" href="#proyek">
-              Lihat proyek
+              Lihat Hasil Karya
               <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                 <path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.3"/>
               </svg>
             </a>
-            <a class="btn btn-line" href="#harga">Rincian harga</a>
+            <a class="btn btn-line" href="#estimator">
+              Hitung Estimasi Biaya
+            </a>
+            <a class="btn btn-line" href="https://wa.me/6285795125809?text=halo!%2C%20ingin%20konsultasi%20jasa%20pengerjaan%20web%20apakah%20bisa%3F" target="_blank" rel="noopener">
+              Konsultasi WhatsApp
+            </a>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="Ringkasan layanan">
+        <aside class="hero-panel" aria-label="Ringkasan spesifikasi layanan">
           <div class="panel-top">
-            <span class="status"><span class="status-dot" aria-hidden="true"></span>Menerima 2 proyek baru</span>
-            <span class="mono muted">Nov 2026</span>
+            <span class="status">
+              <span class="status-dot" aria-hidden="true"></span>
+              Menerima Proyek Baru
+            </span>
+            <span class="live-clock" id="liveClock">--:--:-- WIB</span>
           </div>
 
           <dl class="panel-list">
             <div>
-              <dt>Mulai dari</dt>
+              <dt>Biaya awal mulai</dt>
               <dd>Rp 250.000</dd>
             </div>
             <div>
@@ -95,360 +118,957 @@
               <dd>1 hari – 2 bulan</dd>
             </div>
             <div>
-              <dt>Revisi</dt>
-              <dd>1–2 putaran</dd>
+              <dt>Revisi disertakan</dt>
+              <dd>1–2 putaran tuntas</dd>
             </div>
             <div>
-              <dt>Setelah serah terima</dt>
-              <dd>Garansi 30 hari</dd>
+              <dt>Dukungan purna jual</dt>
+              <dd>Garansi 30 hari penuh</dd>
+            </div>
+            <div>
+              <dt>Kepemilikan kode</dt>
+              <dd>100% milik Anda</dd>
             </div>
           </dl>
 
           <p class="panel-note">
-            Rincian biaya disepakati di awal kontrak. Tidak ada biaya tambahan yang muncul di tengah jalan.
+            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+            </svg>
+            <span>Rincian biaya disepakati di awal kontrak tertulis. Bebas biaya tersembunyi yang muncul di tengah jalan.</span>
           </p>
         </aside>
       </div>
 
       <div class="shell">
         <ul class="hero-meta">
-          <li><span class="meta-key">Berbasis di</span><span class="meta-value">Serang &amp; Bandung, Indonesia</span></li>
-          <li><span class="meta-key">Pengalaman</span><span class="meta-value">6 tahun</span></li>
-          <li><span class="meta-key">Proyek selesai</span><span class="meta-value">40+</span></li>
-          <li><span class="meta-key">Kepemilikan</span><span class="meta-value">Seluruh kode &amp; akses milik Anda</span></li>
+          <li>
+            <span class="meta-key">Berbasis di</span>
+            <span class="meta-value">Serang &amp; Bandung</span>
+            <span class="meta-sub">Jawa Barat &amp; Banten</span>
+          </li>
+          <li>
+            <span class="meta-key">Pengalaman Teknis</span>
+            <span class="meta-value">6 Tahun</span>
+            <span class="meta-sub">Full-Stack Development</span>
+          </li>
+          <li>
+            <span class="meta-key">Proyek Selesai</span>
+            <span class="meta-value">40+ Klien</span>
+            <span class="meta-sub">Bisnis, UMKM, Akademik</span>
+          </li>
+          <li>
+            <span class="meta-key">Hak Akses</span>
+            <span class="meta-value">100% Penuh</span>
+            <span class="meta-sub">Source code &amp; akun mandiri</span>
+          </li>
         </ul>
       </div>
     </section>
 
-    <!-- ============================ TENTANG ============================ -->
+    <!-- ============================ MARQUEE STRIP (LOOPING) ============================ -->
+    <div class="marquee-strip" aria-label="Keunggulan Layanan Webfast">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">Jasa Website Cepat &amp; Rapi <span class="dot">•</span></span>
+          <span class="marquee-item">Harga Transparan Sejak Awal <span class="dot">•</span></span>
+          <span class="marquee-item">100% Hak Akses &amp; Source Code Milik Anda <span class="dot">•</span></span>
+          <span class="marquee-item">Integrasi API &amp; Payment Gateway <span class="dot">•</span></span>
+          <span class="marquee-item">Garansi Perbaikan 30 Hari <span class="dot">•</span></span>
+          <span class="marquee-item">Bicara Langsung dengan Developer <span class="dot">•</span></span>
+          <span class="marquee-item">Bebas Biaya Tersembunyi <span class="dot">•</span></span>
+          <span class="marquee-item">Performa Cepat &amp; Mobile-First <span class="dot">•</span></span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item">Jasa Website Cepat &amp; Rapi <span class="dot">•</span></span>
+          <span class="marquee-item">Harga Transparan Sejak Awal <span class="dot">•</span></span>
+          <span class="marquee-item">100% Hak Akses &amp; Source Code Milik Anda <span class="dot">•</span></span>
+          <span class="marquee-item">Integrasi API &amp; Payment Gateway <span class="dot">•</span></span>
+          <span class="marquee-item">Garansi Perbaikan 30 Hari <span class="dot">•</span></span>
+          <span class="marquee-item">Bicara Langsung dengan Developer <span class="dot">•</span></span>
+          <span class="marquee-item">Bebas Biaya Tersembunyi <span class="dot">•</span></span>
+          <span class="marquee-item">Performa Cepat &amp; Mobile-First <span class="dot">•</span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ 01 / TENTANG ============================ -->
     <section class="section about" id="tentang">
       <div class="shell">
         <div class="section-head">
-          <p class="section-index">01 / Tentang</p>
-          <h2 class="section-title">Jasa yang dikerjakan oleh orang yang benar-benar menulis kodenya.</h2>
+          <p class="section-index">01 / Tentang Webfast</p>
+          <h2 class="section-title">Dikerjakan langsung oleh orang yang benar-benar menulis baris kodenya.</h2>
         </div>
 
         <div class="about-grid">
           <div class="about-copy">
             <p class="lead">
-              Webfast adalah studio kecil yang menangani pembuatan website dari nol:
-              perencanaan struktur, desain antarmuka, penulisan kode, hingga publikasi
-              dan pelatihan penggunaan.
+              Webfast adalah studio pengembangan web mandiri yang menangani proyek dari nol:
+              perencanaan arsitektur, desain antarmuka, penulisan kode bersih, hingga publikasi
+              ke server dan panduan pengoperasian.
             </p>
             <p>
-              Kami tidak mengambil puluhan proyek sekaligus. Setiap bulan hanya beberapa
-              proyek yang kami terima agar kualitas, komunikasi, dan waktu pengerjaan
-              tetap terjaga. Anda berkomunikasi langsung dengan orang yang mengerjakannya,
-              bukan dengan tim penjualan.
+              Kami tidak menerima puluhan proyek sekaligus secara serampangan. Setiap bulan kami
+              membatasi jumlah pengerjaan agar fokus, komunikasi harian, serta standar kualitas
+              tetap berada di level tertinggi. Anda berdiskusi langsung dengan developer teknis,
+              bukan tim sales yang melempar pekerjaan ke pihak ketiga.
             </p>
             <p>
-              Untuk website yang sudah berjalan, kami juga menerima perbaikan: halaman
-              yang lambat, tampilan rusak di ponsel, form yang tidak terkirim, hingga
-              migrasi dari platform lama.
+              Untuk website Anda yang sudah berjalan namun mengalami kendala, kami juga siap
+              melakukan perbaikan: optimasi kecepatan, perbaikan layout rusak di smartphone,
+              form kontak error, hingga migrasi database &amp; hosting.
             </p>
           </div>
 
           <div class="about-principles">
             <div class="principle">
-              <h3>Ruang lingkup jelas</h3>
-              <p>Jumlah halaman, fitur, dan batas revisi disepakati sebelum pekerjaan dimulai.</p>
+              <span class="principle-num">PRINSIP 01</span>
+              <h3>Ruang Lingkup Jelas &amp; Tertulis</h3>
+              <p>Jumlah halaman, fitur spesifik, dan batas revisi dirumuskan serta disepakati di muka sebelum Anda melakukan pembayaran.</p>
             </div>
             <div class="principle">
-              <h3>Dibangun untuk dirawat</h3>
-              <p>Kode dan konten ditata agar bisa Anda perbarui sendiri tanpa bantuan kami.</p>
+              <span class="principle-num">PRINSIP 02</span>
+              <h3>Dibangun untuk Mudah Dirawat</h3>
+              <p>Kode rapi berstandar industri dan tata letak konten dirancang agar Anda bisa memperbaruinya sendiri tanpa harus terus bergantung pada kami.</p>
             </div>
             <div class="principle">
-              <h3>Serah terima penuh</h3>
-              <p>Domain, hosting, repositori, dan akun layanan diserahkan atas nama Anda.</p>
+              <span class="principle-num">PRINSIP 03</span>
+              <h3>Serah Terima Penuh 100%</h3>
+              <p>Domain, server hosting, repositori GitHub, serta seluruh akun layanan diserahkan secara utuh atas nama dan kendali Anda.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================ PROYEK ============================ -->
+    <!-- ============================ 02 / ALUR KERJA ============================ -->
+    <section class="section workflow" id="alur">
+      <div class="shell">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="section-index">02 / Alur Kerja</p>
+            <h2 class="section-title">Pengerjaan terstruktur, transparan dari awal hingga tuntas.</h2>
+          </div>
+          <p class="section-aside">
+            Kami menjaga alur kerja tetap transparan dan tepat waktu. Anda selalu mengetahui progres pembuatan website Anda di setiap tahapan.
+          </p>
+        </div>
+
+        <div class="workflow-grid">
+          <div class="workflow-card">
+            <span class="step-badge">01</span>
+            <h3 class="step-title">Konsultasi &amp; Blueprint</h3>
+            <p class="step-desc">
+              Diskusi mendalam mengenai kebutuhan bisnis, target audiens, fitur kunci, referensi estetika, dan penetapan harga pasti tanpa biaya tersembunyi.
+            </p>
+            <div class="step-deliverable">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Output: Scope of Work &amp; Estimasi Waktu</span>
+            </div>
+          </div>
+
+          <div class="workflow-card">
+            <span class="step-badge">02</span>
+            <h3 class="step-title">Desain &amp; Struktur UI</h3>
+            <p class="step-desc">
+              Penyusunan tata letak halaman yang intuitif, tipografi elegan, navigasi ramah pengguna, dan rancangan visual sebelum baris kode dikerjakan.
+            </p>
+            <div class="step-deliverable">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Output: Mockup Antarmuka Siap Ulas</span>
+            </div>
+          </div>
+
+          <div class="workflow-card">
+            <span class="step-badge">03</span>
+            <h3 class="step-title">Koding &amp; Integrasi</h3>
+            <p class="step-desc">
+              Penulisan kode clean code menggunakan teknologi modern (React, Node.js, Python, atau Java), integrasi basis data, responsif ponsel, dan optimasi SEO.
+            </p>
+            <div class="step-deliverable">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Output: Versi Demo Interaktif (Staging)</span>
+            </div>
+          </div>
+
+          <div class="workflow-card">
+            <span class="step-badge">04</span>
+            <h3 class="step-title">Publikasi &amp; Garansi</h3>
+            <p class="step-desc">
+              Peluncuran ke domain dan server pilihan Anda, pengujian performa akhir, serah terima berkas sumber dan akun, serta pendampingan garansi 30 hari.
+            </p>
+            <div class="step-deliverable">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Output: Website Live &amp; Garansi 30 Hari</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 03 / PROYEK ============================ -->
     <section class="section projects" id="proyek">
       <div class="shell">
         <div class="section-head section-head--split">
           <div>
-            <p class="section-index">02 / Proyek terpilih</p>
-            <h2 class="section-title">Sebagian pekerjaan yang sudah kami selesaikan.</h2>
+            <p class="section-index">03 / Proyek Terpilih</p>
+            <h2 class="section-title">Hasil karya nyata yang cepat, rapi, dan berkinerja tinggi.</h2>
           </div>
           <p class="section-aside">
-            Setiap proyek dimulai dari pemetaan kebutuhan singkat, lalu desain, lalu kode.
-            Berikut beberapa di antaranya.
+            Setiap proyek dikerjakan dengan pendekatan arsitektur yang disesuaikan: mulai dari profil firma hukum elegan, toko online terotomasi, hingga sistem data klinik.
           </p>
         </div>
 
+        <!-- Filter bar -->
+        <div class="filter-bar">
+          <button class="filter-btn is-active" type="button" data-filter="all">Semua Proyek (6)</button>
+          <button class="filter-btn" type="button" data-filter="company">Company Profile</button>
+          <button class="filter-btn" type="button" data-filter="ecommerce">Toko Online</button>
+          <button class="filter-btn" type="button" data-filter="catalog">Katalog &amp; Sistem</button>
+          <button class="filter-btn" type="button" data-filter="academic">Akademik &amp; Portofolio</button>
+        </div>
+
         <div class="project-grid">
-          <article class="project">
+          <!-- Proyek 1 -->
+          <article class="project" data-category="company">
             <div class="project-plate plate-a">
-              <div class="plate-top">
-                <span class="plate-cat">Company profile</span>
-                <span class="plate-year">2026</span>
+              <div class="mockup-chrome">
+                <div class="mockup-dots">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-url">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                  <span>nusantaralegal.id</span>
+                </div>
+                <span class="mockup-badge">Company Profile</span>
               </div>
-              <span class="plate-mark" aria-hidden="true">NL</span>
+              <div class="mockup-canvas">
+                <div class="canvas-header">
+                  <span class="canvas-brand">Nusantara Legal Partners</span>
+                  <span class="canvas-year">2026</span>
+                </div>
+                <div class="canvas-center">
+                  <h4 class="canvas-headline">Integritas Hukum &amp; Advokasi Bisnis</h4>
+                  <div class="canvas-bars">
+                    <span class="canvas-bar"></span>
+                    <span class="canvas-bar"></span>
+                  </div>
+                </div>
+                <div class="canvas-bottom">
+                  <span class="canvas-pill">Corporate Law CMS</span>
+                  <span class="mono muted">Status: Active</span>
+                </div>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Nusantara Legal</h3>
-              <p>Profil firma hukum dengan halaman praktik, tim, dan publikasi artikel yang dikelola lewat CMS.</p>
+              <div class="project-head-row">
+                <h3>Nusantara Legal</h3>
+                <span class="project-type-tag">Firma Hukum</span>
+              </div>
+              <p>Profil firma hukum dengan tata letak editorial, katalog bidang praktik, profil para partner, dan publikasi artikel opini yang dapat diperbarui secara mandiri.</p>
               <ul class="tags">
-                <li>React</li><li>Node.js</li><li>MySQL</li>
+                <li>React</li><li>Node.js</li><li>MySQL</li><li>Headless CMS</li>
               </ul>
             </div>
           </article>
 
-          <article class="project">
+          <!-- Proyek 2 -->
+          <article class="project" data-category="ecommerce">
             <div class="project-plate plate-b">
-              <div class="plate-top">
-                <span class="plate-cat">Toko online</span>
-                <span class="plate-year">2025</span>
+              <div class="mockup-chrome">
+                <div class="mockup-dots">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-url">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                  <span>kopilintang.com</span>
+                </div>
+                <span class="mockup-badge">E-Commerce</span>
               </div>
-              <span class="plate-mark" aria-hidden="true">KL</span>
+              <div class="mockup-canvas">
+                <div class="canvas-header">
+                  <span class="canvas-brand">Kopi Lintang Roastery</span>
+                  <span class="canvas-year">2025</span>
+                </div>
+                <div class="canvas-center">
+                  <h4 class="canvas-headline">Single Origin Specialty Beans</h4>
+                  <div class="canvas-bars">
+                    <span class="canvas-bar"></span>
+                    <span class="canvas-bar"></span>
+                  </div>
+                </div>
+                <div class="canvas-bottom">
+                  <span class="canvas-pill">Payment Gateway Terintegrasi</span>
+                  <span class="mono muted">Auto Ongkir RajaOngkir</span>
+                </div>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Kopi Lintang</h3>
-              <p>Penjualan kopi single origin dengan katalog varian, ongkir otomatis, dan pembayaran daring.</p>
+              <div class="project-head-row">
+                <h3>Kopi Lintang</h3>
+                <span class="project-type-tag">Toko Daring</span>
+              </div>
+              <p>Platform penjualan kopi single origin dengan katalog varian grind &amp; roast, kalkulasi ongkos kirim otomatis se-Indonesia, dan pembayaran daring instan (QRIS &amp; VA).</p>
               <ul class="tags">
-                <li>React</li><li>Node.js</li><li>MySQL</li>
+                <li>React</li><li>Node.js</li><li>MySQL</li><li>Midtrans API</li><li>RajaOngkir</li>
               </ul>
             </div>
           </article>
 
-          <article class="project">
+          <!-- Proyek 3 -->
+          <article class="project" data-category="catalog">
             <div class="project-plate plate-c">
-              <div class="plate-top">
-                <span class="plate-cat">Katalog properti</span>
-                <span class="plate-year">2025</span>
+              <div class="mockup-chrome">
+                <div class="mockup-dots">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-url">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                  <span>bumiagungproperty.co.id</span>
+                </div>
+                <span class="mockup-badge">Listing Properti</span>
               </div>
-              <span class="plate-mark" aria-hidden="true">BA</span>
+              <div class="mockup-canvas">
+                <div class="canvas-header">
+                  <span class="canvas-brand">Bumi Agung Properti</span>
+                  <span class="canvas-year">2025</span>
+                </div>
+                <div class="canvas-center">
+                  <h4 class="canvas-headline">Hunian Eksklusif Serang &amp; Bandung</h4>
+                  <div class="canvas-bars">
+                    <span class="canvas-bar"></span>
+                    <span class="canvas-bar"></span>
+                  </div>
+                </div>
+                <div class="canvas-bottom">
+                  <span class="canvas-pill">Filter Lokasi &amp; KPR</span>
+                  <span class="mono muted">Form Survei Otomatis</span>
+                </div>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Bumi Agung Properti</h3>
-              <p>Daftar unit dengan filter lokasi dan harga, galeri, serta formulir pemesanan survei.</p>
+              <div class="project-head-row">
+                <h3>Bumi Agung Properti</h3>
+                <span class="project-type-tag">Katalog Properti</span>
+              </div>
+              <p>Daftar unit properti dan perumahan dengan filter interaktif berdasarkan kawasan dan harga, simulasi kalkulator KPR, galeri foto virtual, serta sistem booking survei lokasi.</p>
               <ul class="tags">
-                <li>React</li><li>Vite</li><li>Docker</li>
+                <li>React</li><li>Vite</li><li>Docker</li><li>RESTful API</li>
               </ul>
             </div>
           </article>
 
-          <article class="project">
+          <!-- Proyek 4 -->
+          <article class="project" data-category="catalog">
             <div class="project-plate plate-d">
-              <div class="plate-top">
-                <span class="plate-cat">Sistem internal</span>
-                <span class="plate-year">2024</span>
+              <div class="mockup-chrome">
+                <div class="mockup-dots">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-url">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                  <span>app.bumisehat.internal</span>
+                </div>
+                <span class="mockup-badge">Sistem Internal</span>
               </div>
-              <span class="plate-mark" aria-hidden="true">KB</span>
+              <div class="mockup-canvas">
+                <div class="canvas-header">
+                  <span class="canvas-brand">SIM Klinik Bumi Sehat</span>
+                  <span class="canvas-year">2024</span>
+                </div>
+                <div class="canvas-center">
+                  <h4 class="canvas-headline">Antrean &amp; Rekam Medis Digital</h4>
+                  <div class="canvas-bars">
+                    <span class="canvas-bar"></span>
+                    <span class="canvas-bar"></span>
+                  </div>
+                </div>
+                <div class="canvas-bottom">
+                  <span class="canvas-pill">Oracle Enterprise DB</span>
+                  <span class="mono muted">Multi-Role Security</span>
+                </div>
+              </div>
             </div>
             <div class="project-body">
-              <h3>Klinik Bumi Sehat</h3>
-              <p>Pendaftaran pasien dan penjadwalan dokter, menggantikan pembukuan manual di buku agenda.</p>
+              <div class="project-head-row">
+                <h3>Klinik Bumi Sehat</h3>
+                <span class="project-type-tag">Sistem Informasi</span>
+              </div>
+              <p>Sistem registrasi pasien dan penjadwalan dokter berbasis web, memodernisasi pembukuan manual menjadi sistem terpusat yang aman dengan otentikasi peran staf dan dokter.</p>
               <ul class="tags">
-                <li>Java</li><li>Oracle Database</li><li>Docker</li>
+                <li>Java</li><li>Oracle Database</li><li>Docker</li><li>Spring Boot</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Proyek 5 -->
+          <article class="project" data-category="academic">
+            <div class="project-plate plate-e">
+              <div class="mockup-chrome">
+                <div class="mockup-dots">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-url">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                  <span>atelier-arch.portfolio.dev</span>
+                </div>
+                <span class="mockup-badge">Portofolio Kreatif</span>
+              </div>
+              <div class="mockup-canvas">
+                <div class="canvas-header">
+                  <span class="canvas-brand">Atelier Arsitektur</span>
+                  <span class="canvas-year">2026</span>
+                </div>
+                <div class="canvas-center">
+                  <h4 class="canvas-headline">Ruang, Struktur &amp; Pencahayaan Alami</h4>
+                  <div class="canvas-bars">
+                    <span class="canvas-bar"></span>
+                    <span class="canvas-bar"></span>
+                  </div>
+                </div>
+                <div class="canvas-bottom">
+                  <span class="canvas-pill">High-Res Visual Gallery</span>
+                  <span class="mono muted">99/100 Speed Score</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-head-row">
+                <h3>Atelier Arsitektur</h3>
+                <span class="project-type-tag">Portofolio Profesional</span>
+              </div>
+              <p>Website portofolio kurasi karya arsitektur dan desain interior dengan performa tinggi, animasi transisi lembut, galeri visual resolusi tinggi, dan formulir konsultasi cepat.</p>
+              <ul class="tags">
+                <li>HTML5 &amp; CSS3</li><li>JavaScript Modern</li><li>Vite</li><li>Responsive Design</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Proyek 6 -->
+          <article class="project" data-category="academic">
+            <div class="project-plate plate-f">
+              <div class="mockup-chrome">
+                <div class="mockup-dots">
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                  <span class="mockup-dot"></span>
+                </div>
+                <div class="mockup-url">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                  <span>prediksi-akademik.lab.edu</span>
+                </div>
+                <span class="mockup-badge">Akademik &amp; Lomba</span>
+              </div>
+              <div class="mockup-canvas">
+                <div class="canvas-header">
+                  <span class="canvas-brand">Analitika Capaian Praktikum</span>
+                  <span class="canvas-year">2025</span>
+                </div>
+                <div class="canvas-center">
+                  <h4 class="canvas-headline">Visualisasi Data &amp; Regresi Linier</h4>
+                  <div class="canvas-bars">
+                    <span class="canvas-bar"></span>
+                    <span class="canvas-bar"></span>
+                  </div>
+                </div>
+                <div class="canvas-bottom">
+                  <span class="canvas-pill">Algoritma Python &amp; Chart.js</span>
+                  <span class="mono muted">Juara 2 Lomba Nasional</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-head-row">
+                <h3>Analitika Praktikum Mahasiswa</h3>
+                <span class="project-type-tag">Project Tugas &amp; Lomba</span>
+              </div>
+              <p>Aplikasi visualisasi data dan regresi algoritma machine learning sederhana untuk kompetisi inovasi teknologi perguruan tinggi, dilengkapi penjelasan alur data saat demo juri.</p>
+              <ul class="tags">
+                <li>Python</li><li>Flask</li><li>MySQL</li><li>Chart.js</li><li>Jupyter</li>
               </ul>
             </div>
           </article>
         </div>
 
-        <p class="project-footnote">
-          Studi kasus lengkap, termasuk kendala dan keputusan teknisnya, dapat kami tunjukkan saat sesi konsultasi.
-        </p>
+        <div class="project-footnote">
+          <p>Butuh melihat contoh studi kasus yang mirip dengan rencana bisnis Anda? Hubungi kami untuk sesi demo langsung.</p>
+          <a class="btn btn-line btn-sm" href="https://wa.me/6285795125809?text=halo!%20saya%20ingin%20melihat%20demo%20portofolio%20website%20webfast" target="_blank" rel="noopener">
+            Minta Akses Demo Proyek
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- ============================ KEAHLIAN ============================ -->
+    <!-- ============================ 04 / KEAHLIAN ============================ -->
     <section class="section skills" id="keahlian">
       <div class="shell">
         <div class="section-head">
-          <p class="section-index">03 / Keahlian</p>
-          <h2 class="section-title">Alat dan bahasa yang kami gunakan sehari-hari.</h2>
+          <p class="section-index">04 / Keahlian &amp; Standar</p>
+          <h2 class="section-title">Teknologi modern yang kami kuasai untuk hasil cepat, aman, dan scalable.</h2>
         </div>
 
         <div class="skills-grid">
           <div class="skill-group">
-            <h3>Antarmuka</h3>
+            <h3>Antarmuka &amp; Frontend</h3>
             <ul class="skill-list">
-              <li><span>HTML &amp; CSS</span></li>
-              <li><span>JavaScript</span></li>
-              <li><span>React</span></li>
-              <li><span>Vite</span></li>
-              <li><span>Tampilan responsif</span></li>
+              <li><span>HTML5 &amp; CSS3 Modern</span><span class="skill-level">Mahir</span></li>
+              <li><span>JavaScript (ES6+)</span><span class="skill-level">Mahir</span></li>
+              <li><span>React &amp; Next.js</span><span class="skill-level">Mahir</span></li>
+              <li><span>Vite Tooling</span><span class="skill-level">Mahir</span></li>
+              <li><span>Tampilan Responsif Mobile-First</span><span class="skill-level">Standar Utama</span></li>
             </ul>
           </div>
 
           <div class="skill-group">
-            <h3>Server &amp; data</h3>
+            <h3>Backend &amp; Basis Data</h3>
             <ul class="skill-list">
-              <li><span>Node.js</span></li>
-              <li><span>Python</span></li>
-              <li><span>Java</span></li>
-              <li><span>MySQL</span></li>
-              <li><span>Oracle Database</span></li>
-              <li><span>REST &amp; integrasi API</span></li>
+              <li><span>Node.js &amp; Express</span><span class="skill-level">Mahir</span></li>
+              <li><span>Python &amp; Flask/FastAPI</span><span class="skill-level">Mahir</span></li>
+              <li><span>Java &amp; Spring Boot</span><span class="skill-level">Mahir</span></li>
+              <li><span>MySQL &amp; PostgreSQL</span><span class="skill-level">Mahir</span></li>
+              <li><span>Oracle Database</span><span class="skill-level">Enterprise</span></li>
+              <li><span>REST API &amp; Integrasi Payment</span><span class="skill-level">Mahir</span></li>
             </ul>
           </div>
 
           <div class="skill-group">
-            <h3>Alat &amp; platform</h3>
+            <h3>DevOps &amp; Standar Kinerja</h3>
             <ul class="skill-list">
-              <li><span>Docker</span></li>
-              <li><span>Git</span></li>
-              <li><span>Deploy &amp; domain</span></li>
-              <li><span>SEO teknis</span></li>
-              <li><span>Optimasi performa</span></li>
+              <li><span>Docker Containerization</span><span class="skill-level">Mahir</span></li>
+              <li><span>Git &amp; GitHub Version Control</span><span class="skill-level">Mahir</span></li>
+              <li><span>Deploy Server &amp; Domain DNS</span><span class="skill-level">Lengkap</span></li>
+              <li><span>SEO Teknis &amp; Meta Schema</span><span class="skill-level">Optimasi</span></li>
+              <li><span>Optimasi Performa Web Vitals</span><span class="skill-level">Tinggi</span></li>
             </ul>
           </div>
         </div>
 
-        <p class="skills-note">
-          Kami memilih teknologi berdasarkan kebutuhan proyek: React dan Vite untuk
-          antarmuka, Node.js, Python, atau Java di sisi server, dengan MySQL atau
-          Oracle Database sebagai penyimpanan data.
-        </p>
+        <!-- Webfast Quality Standards Box -->
+        <div class="standards-card">
+          <div class="standard-item">
+            <span class="standard-score">100/100</span>
+            <h4>Lighthouse Optimization</h4>
+            <p>Kode dirancang ramping tanpa framework bloatware yang memperlambat muat halaman ponsel pelanggan Anda.</p>
+          </div>
+          <div class="standard-item">
+            <span class="standard-score">&lt; 1.0s</span>
+            <h4>Waktu Muat Rata-Rata</h4>
+            <p>Aset gambar terkompresi cerdas dan kode terbundel efisien menjamin pengunjung langsung melihat konten Anda.</p>
+          </div>
+          <div class="standard-item">
+            <span class="standard-score">100%</span>
+            <h4>Responsive Cross-Device</h4>
+            <p>Teruji mulus di ponsel Android, iPhone, tablet iPad, hingga layar monitor desktop resolusi 4K ultra-wide.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ============================ HARGA ============================ -->
+    <!-- ============================ 05 / HARGA ============================ -->
     <section class="section pricing" id="harga">
       <div class="shell">
         <div class="section-head section-head--split">
           <div>
-            <p class="section-index">04 / Harga</p>
-            <h2 class="section-title">Harga jelas, disepakati sebelum mulai.</h2>
+            <p class="section-index">05 / Rincian Harga</p>
+            <h2 class="section-title">Harga transparan, disepakati sebelum pekerjaan dimulai.</h2>
           </div>
           <p class="section-aside">
-            Nominal di bawah adalah biaya awal; nilai akhir menyesuaikan jumlah halaman
-            dan fitur. Desain, pengembangan, dan publikasi sudah termasuk. Untuk domain,
-            Anda bisa memakai domain gratis, domain pribadi yang sudah dimiliki, atau
-            include domain seharga Rp 150.000/tahun. Hosting dibayarkan terpisah.
+            Nominal di bawah adalah biaya awal; nilai akhir menyesuaikan kompleksitas fitur dan jumlah halaman. Untuk domain, Anda bebas memakai domain gratis, domain pribadi yang sudah dimiliki, atau include domain baru (.com/.id) seharga Rp 150.000/tahun. Biaya hosting disesuaikan kebutuhan.
           </p>
         </div>
 
+        <!-- Pricing Categories Tab -->
+        <div class="pricing-tabs">
+          <button class="pricing-tab-btn is-active" type="button" data-pcat="all">Semua Paket (5)</button>
+          <button class="pricing-tab-btn" type="button" data-pcat="business">Komersil &amp; Bisnis</button>
+          <button class="pricing-tab-btn" type="button" data-pcat="academic">Personal &amp; Akademik</button>
+        </div>
+
         <div class="price-grid">
-          <div class="price-card">
+          <!-- 1. Portofolio -->
+          <div class="price-card" data-pcat="academic">
             <div class="price-head">
+              <span class="price-flag">Personal</span>
               <h3>Website Portofolio</h3>
-              <p class="price-desc">Halaman personal untuk menampilkan karya, pengalaman, dan kontak.</p>
+              <p class="price-desc">Halaman personal profesional untuk menampilkan karya, profil karier, dan kontak.</p>
             </div>
             <p class="price-from">Mulai dari</p>
             <p class="price-amount"><span class="currency">Rp</span>250<span class="unit">rb</span></p>
             <p class="price-time">1–2 hari kerja</p>
             <ul class="price-features">
               <li>Domain: gratis, pribadi, atau include (Rp 150rb/tahun)</li>
-              <li>Halaman beranda, karya, dan kontak</li>
-              <li>Desain menyesuaikan bidang Anda</li>
-              <li>Tampilan responsif ponsel</li>
-              <li>Formulir ke WhatsApp atau email</li>
-              <li>SEO dasar</li>
-              <li>1 putaran revisi</li>
+              <li>Halaman beranda, galeri karya, dan kontak</li>
+              <li>Desain disesuaikan bidang keahlian Anda</li>
+              <li>Tampilan 100% responsif di ponsel</li>
+              <li>Formulir direct WhatsApp &amp; email</li>
+              <li>SEO teknis dasar &amp; meta tag</li>
+              <li>1 putaran revisi tuntas</li>
             </ul>
-            <a class="btn btn-line btn-block" href="#kontak">Ajukan proyek</a>
+            <a class="btn btn-line btn-block" href="#kontak">Ajukan Proyek</a>
           </div>
 
-          <div class="price-card">
+          <!-- 2. Akademik Tugas -->
+          <div class="price-card" data-pcat="academic">
             <div class="price-head">
+              <span class="price-flag">Mahasiswa</span>
               <h3>Project Akademik — Tugas</h3>
-              <p class="price-desc">Aplikasi atau website untuk memenuhi tugas kuliah dan praktikum.</p>
+              <p class="price-desc">Aplikasi web fungsional untuk memenuhi tugas mata kuliah, praktikum, atau UAS.</p>
             </div>
             <p class="price-from">Mulai dari</p>
             <p class="price-amount"><span class="currency">Rp</span>400<span class="unit">rb</span></p>
             <p class="price-time">1–6 hari kerja</p>
             <ul class="price-features">
               <li>Domain: gratis, pribadi, atau include (Rp 150rb/tahun)</li>
-              <li>Fitur sesuai ketentuan tugas</li>
-              <li>React, Node.js, Python, atau Java</li>
-              <li>Database MySQL atau Oracle</li>
-              <li>Struktur kode rapi &amp; mudah dijelaskan</li>
-              <li>Penjelasan alur program</li>
-              <li>1 putaran revisi</li>
+              <li>Fitur spesifik sesuai ketentuan modul tugas</li>
+              <li>Pilihan teknologi: React, Node.js, Python, atau Java</li>
+              <li>Database MySQL atau Oracle Database</li>
+              <li>Struktur kode rapi &amp; siap dipresentasikan</li>
+              <li>Penjelasan singkat alur program &amp; logika</li>
+              <li>1 putaran revisi tuntas</li>
             </ul>
-            <a class="btn btn-line btn-block" href="#kontak">Ajukan proyek</a>
+            <a class="btn btn-line btn-block" href="#kontak">Ajukan Proyek</a>
           </div>
 
-          <div class="price-card">
+          <!-- 3. Akademik Lomba -->
+          <div class="price-card" data-pcat="academic">
             <div class="price-head">
+              <span class="price-flag">Kompetisi</span>
               <h3>Project Akademik — Lomba</h3>
-              <p class="price-desc">Pengerjaan lebih matang untuk kompetisi dan presentasi juri.</p>
+              <p class="price-desc">Pengembangan matang berstandar kompetisi nasional untuk presentasi di depan juri.</p>
             </div>
             <p class="price-from">Mulai dari</p>
             <p class="price-amount"><span class="currency">Rp</span>450<span class="unit">rb</span></p>
             <p class="price-time">5–10 hari kerja</p>
             <ul class="price-features">
               <li>Domain: gratis, pribadi, atau include (Rp 150rb/tahun)</li>
-              <li>Pengembangan sesuai kriteria penilaian</li>
-              <li>Antarmuka dipoles untuk presentasi</li>
-              <li>Fitur tambahan sesuai kebutuhan lomba</li>
-              <li>Dokumentasi &amp; panduan demo</li>
-              <li>Pendampingan sampai hari penilaian</li>
-              <li>1 putaran revisi</li>
+              <li>Pengembangan sesuai kriteria rubrik juri</li>
+              <li>Antarmuka dipoles maksimal untuk demo</li>
+              <li>Fitur inovasi sesuai tema kompetisi</li>
+              <li>Dokumentasi teknis &amp; panduan demo</li>
+              <li>Pendampingan teknis sampai hari presentasi</li>
+              <li>1 putaran revisi tuntas</li>
             </ul>
-            <a class="btn btn-line btn-block" href="#kontak">Ajukan proyek</a>
+            <a class="btn btn-line btn-block" href="#kontak">Ajukan Proyek</a>
           </div>
 
-          <div class="price-card price-card--featured">
+          <!-- 4. Company Profile (Featured) -->
+          <div class="price-card price-card--featured" data-pcat="business">
+            <span class="price-badge-pop">Paling Diminati</span>
             <div class="price-head">
-              <div class="price-flag">Untuk bisnis</div>
+              <span class="price-flag">Bisnis &amp; UMKM</span>
               <h3>Company Profile</h3>
-              <p class="price-desc">Website resmi perusahaan dengan konten yang bisa Anda kelola.</p>
+              <p class="price-desc">Website representatif perusahaan dengan kredibilitas tinggi dan mudah dikelola.</p>
             </div>
             <p class="price-from">Mulai dari</p>
             <p class="price-amount"><span class="currency">Rp</span>500<span class="unit">rb</span></p>
             <p class="price-time">7–14 hari kerja</p>
             <ul class="price-features">
               <li>Domain: gratis, pribadi, atau include (Rp 150rb/tahun)</li>
-              <li>Hingga 5 halaman</li>
-              <li>Desain khusus, bukan template</li>
-              <li>Halaman layanan, tim, dan kontak</li>
-              <li>Formulir, peta, galeri</li>
-              <li>SEO on-page &amp; sitemap</li>
-              <li>Pelatihan penggunaan &amp; 2 revisi</li>
+              <li>Hingga 5 halaman (Home, Profil, Layanan, Tim, Kontak)</li>
+              <li>Desain orisinal menyesuaikan identitas brand</li>
+              <li>Formulir interaktif, Google Maps &amp; galeri</li>
+              <li>SEO on-page, sitemap XML, dan integrasi Google</li>
+              <li>Pelatihan cara update konten bagi staf Anda</li>
+              <li>2 putaran revisi tuntas &amp; garansi 30 hari</li>
             </ul>
-            <a class="btn btn-solid btn-block" href="#kontak">Ajukan proyek</a>
+            <a class="btn btn-solid btn-block" href="#kontak">Pilih Paket Bisnis</a>
           </div>
 
-          <div class="price-card">
+          <!-- 5. E-Commerce -->
+          <div class="price-card" data-pcat="business">
             <div class="price-head">
-              <h3>E-commerce</h3>
-              <p class="price-desc">Penjualan daring lengkap dengan pengelolaan pesanan.</p>
+              <span class="price-flag">Komersil</span>
+              <h3>E-Commerce / Toko Online</h3>
+              <p class="price-desc">Penjualan produk daring lengkap dengan otomasi pesanan, ongkir, dan pembayaran.</p>
             </div>
             <p class="price-from">Mulai dari</p>
             <p class="price-amount"><span class="currency">Rp</span>800<span class="unit">rb</span></p>
             <p class="price-time">1–2 bulan</p>
             <ul class="price-features">
               <li>Domain: gratis, pribadi, atau include (Rp 150rb/tahun)</li>
-              <li>Katalog produk &amp; varian</li>
-              <li>Keranjang &amp; checkout</li>
-              <li>Integrasi pembayaran</li>
-              <li>Perhitungan ongkir</li>
-              <li>Dashboard pesanan &amp; stok</li>
-              <li>Akun pelanggan</li>
-              <li>Pelatihan admin &amp; 2 revisi</li>
+              <li>Katalog produk, varian ukuran/warna, dan inventaris</li>
+              <li>Keranjang belanja &amp; checkout otomatis</li>
+              <li>Integrasi payment gateway (QRIS, VA, Transfer)</li>
+              <li>Kalkulasi ongkos kirim otomatis (JNE, J&amp;T, SiCepat)</li>
+              <li>Dashboard admin pengelolaan pesanan</li>
+              <li>Pelatihan admin lengkap &amp; 2 putaran revisi</li>
             </ul>
-            <a class="btn btn-line btn-block" href="#kontak">Ajukan proyek</a>
+            <a class="btn btn-line btn-block" href="#kontak">Ajukan Proyek</a>
           </div>
         </div>
 
         <div class="price-notes">
-          <p><span class="mono">Perbaikan</span> Mulai Rp 250.000 untuk masalah tampilan, kecepatan, atau formulir.</p>
-          <p><span class="mono">Perawatan</span> Rp 150.000/bulan untuk pembaruan, cadangan data, dan bantuan teknis.</p>
-          <p><span class="mono">Lainnya</span> Butuh fitur di luar daftar? Kirim kebutuhan Anda, kami beri penawaran terpisah.</p>
+          <p><span class="mono">Layanan Perbaikan</span> Mulai Rp 250.000 untuk perbaikan tampilan rusak, website lemot, formulir error, atau bug kode.</p>
+          <p><span class="mono">Paket Perawatan</span> Rp 150.000/bulan untuk pembaruan sistem, cadangan data rutin, dan bantuan teknis berkala.</p>
+          <p><span class="mono">Fitur Kustom Khusus</span> Membutuhkan integrasi API khusus atau modul unik di luar paket? Hubungi kami untuk penawaran khusus.</p>
         </div>
       </div>
     </section>
 
-    <!-- ============================ TIM ============================ -->
+    <!-- ============================ 06 / KALKULATOR ============================ -->
+    <section class="section estimator" id="estimator">
+      <div class="shell">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="section-index">06 / Kalkulator Estimasi Biaya</p>
+            <h2 class="section-title">Hitung estimasi investasi website Anda secara instan.</h2>
+          </div>
+          <p class="section-aside">
+            Pilih paket dan konfigurasi fitur yang Anda inginkan. Total biaya akan dikalkulasikan secara otomatis dan siap Anda teruskan ke WhatsApp untuk konsultasi cepat.
+          </p>
+        </div>
+
+        <div class="calc-container">
+          <div class="calc-inputs">
+            <!-- 1. Tipe Website -->
+            <div class="calc-group">
+              <span class="calc-label">1. Pilih Jenis Kebutuhan Website</span>
+              <div class="calc-pill-options">
+                <button type="button" class="calc-option-btn" data-type-name="Website Portofolio" data-type-price="250000" data-type-time="1–2 hari kerja">
+                  <span class="calc-option-name">Portofolio</span>
+                  <span class="calc-option-sub">Rp 250rb · 1-2 hari</span>
+                </button>
+                <button type="button" class="calc-option-btn" data-type-name="Project Tugas Akademik" data-type-price="400000" data-type-time="1–6 hari kerja">
+                  <span class="calc-option-name">Tugas Kuliah</span>
+                  <span class="calc-option-sub">Rp 400rb · 1-6 hari</span>
+                </button>
+                <button type="button" class="calc-option-btn" data-type-name="Project Lomba Akademik" data-type-price="450000" data-type-time="5–10 hari kerja">
+                  <span class="calc-option-name">Lomba Kampus</span>
+                  <span class="calc-option-sub">Rp 450rb · 5-10 hari</span>
+                </button>
+                <button type="button" class="calc-option-btn is-selected" data-type-name="Company Profile" data-type-price="500000" data-type-time="7–14 hari kerja">
+                  <span class="calc-option-name">Company Profile</span>
+                  <span class="calc-option-sub">Rp 500rb · 7-14 hari</span>
+                </button>
+                <button type="button" class="calc-option-btn" data-type-name="E-Commerce / Toko Online" data-type-price="800000" data-type-time="1–2 bulan">
+                  <span class="calc-option-name">Toko Online</span>
+                  <span class="calc-option-sub">Rp 800rb · 1-2 bln</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Opsi Domain -->
+            <div class="calc-group">
+              <span class="calc-label">2. Pengaturan Domain Website</span>
+              <div class="calc-pill-options">
+                <button type="button" class="calc-option-btn" data-domain-name="Domain Gratis / Subdomain" data-domain-price="0">
+                  <span class="calc-option-name">Domain Gratis</span>
+                  <span class="calc-option-sub">+Rp 0</span>
+                </button>
+                <button type="button" class="calc-option-btn" data-domain-name="Pakai Domain Pribadi Klien" data-domain-price="0">
+                  <span class="calc-option-name">Punya Domain Sendiri</span>
+                  <span class="calc-option-sub">+Rp 0 (Setup kami bantu)</span>
+                </button>
+                <button type="button" class="calc-option-btn is-selected" data-domain-name="Include Domain Baru (.com / .id)" data-domain-price="150000">
+                  <span class="calc-option-name">Beli Domain Baru</span>
+                  <span class="calc-option-sub">+Rp 150rb/tahun</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 3. Kecepatan Pengerjaan -->
+            <div class="calc-group">
+              <span class="calc-label">3. Prioritas Kecepatan Pengerjaan</span>
+              <div class="calc-pill-options">
+                <button type="button" class="calc-option-btn is-selected" data-speed-name="Reguler" data-speed-mult="1">
+                  <span class="calc-option-name">Jadwal Reguler</span>
+                  <span class="calc-option-sub">Sesuai timeline standar</span>
+                </button>
+                <button type="button" class="calc-option-btn" data-speed-name="Express (Prioritas Utama)" data-speed-mult="1.25">
+                  <span class="calc-option-name">Layanan Express ⚡</span>
+                  <span class="calc-option-sub">2x Lebih Cepat (+25%)</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 4. Fitur Tambahan (Add-ons) -->
+            <div class="calc-group">
+              <span class="calc-label">4. Fitur Tambahan Opsional</span>
+              <div class="calc-addons">
+                <label class="calc-checkbox-label">
+                  <div class="calc-checkbox-left">
+                    <input type="checkbox" class="calc-checkbox calc-addon-check" data-name="CMS Admin Panel (Edit Teks Sendiri)" data-price="150000">
+                    <span class="calc-checkbox-text">Dashboard CMS Admin (Kelola teks &amp; foto tanpa koding)</span>
+                  </div>
+                  <span class="calc-checkbox-price">+Rp 150.000</span>
+                </label>
+
+                <label class="calc-checkbox-label">
+                  <div class="calc-checkbox-left">
+                    <input type="checkbox" class="calc-checkbox calc-addon-check" data-name="Integrasi Payment Gateway Otomatis" data-price="200000">
+                    <span class="calc-checkbox-text">Integrasi Payment Gateway (QRIS, VA Bank, E-Wallet)</span>
+                  </div>
+                  <span class="calc-checkbox-price">+Rp 200.000</span>
+                </label>
+
+                <label class="calc-checkbox-label">
+                  <div class="calc-checkbox-left">
+                    <input type="checkbox" class="calc-checkbox calc-addon-check" data-name="Setup Google Bisnis & SEO Premium" data-price="100000">
+                    <span class="calc-checkbox-text">Optimasi SEO Premium &amp; Pendaftaran Google Search Console</span>
+                  </div>
+                  <span class="calc-checkbox-price">+Rp 100.000</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kalkulator Output Receipt -->
+          <div class="calc-receipt">
+            <div class="receipt-header">
+              <span class="receipt-title">Spesifikasi Estimasi</span>
+              <span class="mono muted">Kalkulasi Otomatis</span>
+            </div>
+
+            <dl class="receipt-summary-list">
+              <div class="receipt-row">
+                <dt>Tipe Proyek</dt>
+                <dd id="calcSumType">Company Profile</dd>
+              </div>
+              <div class="receipt-row">
+                <dt>Domain</dt>
+                <dd id="calcSumDomain">Include Domain (.com/.id)</dd>
+              </div>
+              <div class="receipt-row">
+                <dt>Kecepatan</dt>
+                <dd id="calcSumSpeed">Reguler</dd>
+              </div>
+              <div class="receipt-row">
+                <dt>Fitur Tambahan</dt>
+                <dd id="calcSumAddons">Tidak ada</dd>
+              </div>
+            </dl>
+
+            <div class="receipt-total-box">
+              <p class="receipt-total-label">Estimasi Total Investasi</p>
+              <p class="receipt-total-num" id="calcTotalAmount">Rp 650.000</p>
+              <p class="receipt-time-est">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span id="calcTotalTime">7–14 hari kerja</span>
+              </p>
+            </div>
+
+            <a class="btn btn-solid btn-block" id="calcWaBtn" href="#" target="_blank" rel="noopener">
+              Konsultasikan Pilihan Ini via WhatsApp
+              <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 07 / FAQ ============================ -->
+    <section class="section faq" id="faq">
+      <div class="shell">
+        <div class="section-head">
+          <p class="section-index">07 / Tanya Jawab</p>
+          <h2 class="section-title">Hal yang paling sering ditanyakan sebelum memulai proyek.</h2>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item is-open">
+            <button class="faq-question" type="button">
+              <span>Berapa lama rata-rata waktu pengerjaan website di Webfast?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer" style="max-height: 200px;">
+              <div class="faq-answer-inner">
+                Waktu pengerjaan bergantung pada jenis website yang Anda pilih: website portofolio personal umumnya selesai dalam 1–2 hari kerja, company profile bisnis berkisar 7–14 hari kerja, dan toko online e-commerce membutuhkan 1–2 bulan. Kami selalu memberikan tanggal tenggat yang pasti di awal kontrak.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Apakah kode program dan akses domain sepenuhnya milik saya?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Ya, 100% milik Anda. Kami tidak pernah menahan repositori kode atau akun domain klien. Setelah peluncuran selesai, seluruh source code, akses server, repositori GitHub, dan lisensi akun dipindahkan atas nama Anda tanpa biaya tambahan.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Bagaimana mekanisme pembayarannya? Apakah ada sistem termin (DP)?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Untuk menjaga rasa aman kedua belah pihak, pembayaran menggunakan sistem termin: Down Payment (DP) sebesar 50% di awal sebagai tanda jadi dimulainya pengerjaan, dan pelunasan sisa 50% dibayarkan setelah website selesai diuji coba di server staging dan siap diluncurkan.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Bagaimana jika saya belum memiliki materi teks tulisan atau foto produk?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Jangan khawatir. Tim kami dapat membantu menyusun draf struktur konten (copywriting) profesional yang relevan dengan industri Anda, serta menggunakan kurasi aset foto berkualitas tinggi berlisensi bebas komersial sebagai permulaan.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Apa saja yang dicakup dalam Garansi 30 Hari Purna Jual?</span>
+              <span class="faq-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Garansi 30 hari mencakup perbaikan bug yang mungkin timbul setelah serah terima, perbaikan kendala tampilan di jenis perangkat baru, pendampingan kendala domain/hosting, serta sesi tanya-jawab mengenai cara mengoperasikan website Anda.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 08 / TIM ============================ -->
     <section class="section team" id="tim">
       <div class="shell">
         <div class="section-head">
-          <p class="section-index">05 / Tim</p>
-          <h2 class="section-title">Dua orang, satu standar kerja.</h2>
+          <p class="section-index">08 / Tim Profesional</p>
+          <h2 class="section-title">Dua orang founder dengan satu standar kualitas tinggi.</h2>
         </div>
 
         <div class="team-panel">
-          <article class="person">
+          <!-- Person 1: Samuel Silaban -->
+          <article class="person-card">
             <div class="person-head">
               <span class="monogram monogram--photo">
-                <img src="assets/samuelsilaban.png" alt="Foto Samuel Silaban" width="54" height="54" loading="lazy">
+                <img src="assets/samuelsilaban.png" alt="Foto Samuel Silaban" width="72" height="72" loading="lazy">
               </span>
               <div>
                 <p class="person-role">Founder &amp; Lead Developer</p>
@@ -457,33 +1077,34 @@
             </div>
 
             <p class="person-bio">
-              Memegang seluruh pengerjaan teknis di Webfast: arsitektur, penulisan
-              kode, hingga publikasi. Berlatar Sistem Informasi Kelautan, terbiasa
-              membangun sistem berbasis data spasial dan aplikasi web yang terhubung ke API.
+              Memegang seluruh pengerjaan teknis di Webfast: arsitektur sistem, penulisan kode bersih, integrasi API, hingga publikasi server. Berlatar belakang Sistem Informasi Kelautan, terbiasa merancang sistem berbasis data spasial dan aplikasi web modern berkinerja tinggi.
             </p>
 
             <dl class="person-data">
-              <div><dt>Fokus</dt><dd>Pengembangan web, integrasi API, publikasi</dd></div>
+              <div><dt>Fokus</dt><dd>Full-Stack Web, API Architecture, Cloud Deployment</dd></div>
               <div><dt>Domisili</dt><dd>Serang, Banten</dd></div>
-              <div><dt>Pengalaman</dt><dd>4 tahun</dd></div>
+              <div><dt>Pengalaman</dt><dd>4 tahun profesional</dd></div>
               <div><dt>Pendidikan</dt><dd>S1 Sistem Informasi Kelautan</dd></div>
             </dl>
 
             <div class="person-actions">
               <a class="btn btn-line" href="https://samuelsilaban.netlify.app/" target="_blank" rel="noopener">
-                Website pribadi
+                Website Pribadi
                 <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                   <path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.3"/>
                 </svg>
               </a>
-              <a class="btn btn-line" href="assets/CV.Samuel%20Silaban.pdf" download="CV Samuel Silaban.pdf">Unduh CV</a>
+              <a class="btn btn-line" href="assets/CV.Samuel%20Silaban.pdf" download="CV Samuel Silaban.pdf">
+                Unduh CV (PDF)
+              </a>
             </div>
           </article>
 
-          <article class="person">
+          <!-- Person 2: Kevin Alfa Setiawan -->
+          <article class="person-card">
             <div class="person-head">
               <span class="monogram monogram--photo">
-                <img src="assets/kevin.jpg" alt="Foto Kevin Alfa Setiawan" width="54" height="54" loading="lazy">
+                <img src="assets/kevin.jpg" alt="Foto Kevin Alfa Setiawan" width="72" height="72" loading="lazy">
               </span>
               <div>
                 <p class="person-role">Founder, Developer &amp; Admin</p>
@@ -492,90 +1113,104 @@
             </div>
 
             <p class="person-bio">
-              Ikut mengerjakan pengembangan web, sekaligus menjadi admin yang mengelola
-              pesanan dan berkomunikasi langsung dengan pelanggan — dari konsultasi awal
-              sampai proyek selesai.
+              Ikut mengerjakan pengembangan web, sekaligus menjadi pengelola operasional yang memastikan pesanan Anda berjalan tepat waktu dan transparan. Menjadi narahubung utama dari konsultasi konsep awal hingga website tuntas diserahterimakan.
             </p>
 
             <dl class="person-data">
-              <div><dt>Fokus</dt><dd>Administrasi proyek, komunikasi pelanggan, basis data</dd></div>
-              <div><dt>Domisili</dt><dd>Bandung</dd></div>
-              <div><dt>Pengalaman</dt><dd>4 tahun</dd></div>
+              <div><dt>Fokus</dt><dd>Administrasi Proyek, Client Communication, Database Design</dd></div>
+              <div><dt>Domisili</dt><dd>Bandung, Jawa Barat</dd></div>
+              <div><dt>Pengalaman</dt><dd>4 tahun profesional</dd></div>
               <div><dt>Pendidikan</dt><dd>S1 Sistem Informasi</dd></div>
             </dl>
 
             <div class="person-actions">
-              <a class="btn btn-line" href="assets/CV%20Kevin%20Alfa%20Setiawan.pdf" download="CV Kevin Alfa Setiawan.pdf">Unduh CV</a>
+              <a class="btn btn-line" href="assets/CV%20Kevin%20Alfa%20Setiawan.pdf" download="CV Kevin Alfa Setiawan.pdf">
+                Unduh CV (PDF)
+              </a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============================ KONTAK ============================ -->
+    <!-- ============================ 09 / KONTAK ============================ -->
     <section class="contact" id="kontak">
       <div class="shell contact-inner">
         <div class="contact-copy">
-          <p class="section-index section-index--light">06 / Kontak</p>
-          <h2 class="contact-title">Ceritakan proyeknya.<br>Kami balas dalam satu hari kerja.</h2>
+          <p class="section-index section-index--light">09 / Kontak Langsung</p>
+          <h2 class="contact-title">Ceritakan rencana website Anda.<br>Kami balas dalam hitungan jam.</h2>
           <p class="contact-note">
-            Kirimkan gambaran singkat: jenis proyek (portofolio, tugas, company profile,
-            atau toko online), jumlah halaman, dan tenggat yang Anda inginkan. Kami akan
-            membalas dengan estimasi biaya dan waktu.
+            Kirimkan gambaran singkat ide atau kendala website Anda: jenis website (portofolio, tugas/lomba, company profile, atau toko online), estimasi halaman, dan target waktu selesai. Kami akan membalas dengan saran arsitektur serta estimasi biaya yang transparan.
           </p>
+
+          <div class="contact-guarantee">
+            <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+            <span>Waktu respons rata-rata: &lt; 2 jam di hari kerja</span>
+          </div>
         </div>
 
         <div class="contact-actions">
-          <a class="contact-link" href="mailto:kevinaaw12345@gmail.com">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">kevinaaw12345@gmail.com</span>
-          </a>
           <a class="contact-link" href="https://wa.me/6285795125809?text=halo!%2C%20ingin%20konsultasi%20jasa%20pengerjaan%20web%20apakah%20bisa%3F" target="_blank" rel="noopener">
-            <span class="contact-label">WhatsApp</span>
+            <span class="contact-label">WhatsApp Cepat</span>
             <span class="contact-value">+62 857-9512-5809</span>
           </a>
-          <a class="btn btn-solid btn-block" href="mailto:kevinaaw12345@gmail.com?subject=Permintaan%20penawaran%20website">
-            Kirim permintaan penawaran
+          <a class="contact-link" href="mailto:kevinaaw12345@gmail.com">
+            <span class="contact-label">Email Penawaran</span>
+            <span class="contact-value">kevinaaw12345@gmail.com</span>
+          </a>
+          <a class="btn btn-solid btn-block" href="mailto:kevinaaw12345@gmail.com?subject=Permintaan%20Penawaran%20Website%20Webfast">
+            Kirim Permintaan Penawaran Resmi
           </a>
         </div>
       </div>
     </section>
+
   </main>
 
+  <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer">
     <div class="shell footer-inner">
       <div class="footer-brand">
         <span class="brand-name">Webfast</span>
-        <p>Jasa pembuatan dan perbaikan website.<br>Serang &amp; Bandung, Indonesia.</p>
+        <p>Studio jasa pembuatan dan perbaikan website terpercaya.<br>Serang &amp; Bandung, Indonesia.</p>
       </div>
 
       <nav class="footer-nav" aria-label="Navigasi footer">
         <a href="#tentang">Tentang</a>
+        <a href="#alur">Alur Kerja</a>
         <a href="#proyek">Proyek</a>
         <a href="#harga">Harga</a>
+        <a href="#estimator">Kalkulator</a>
         <a href="#tim">Tim</a>
+        <a href="#faq">FAQ</a>
       </nav>
 
       <div class="footer-meta">
-        <p>&copy; <span id="year">2026</span> Webfast. Seluruh hak cipta dilindungi.</p>
-        <a class="to-top" href="#top">Kembali ke atas</a>
+        <p>&copy; <span id="year">2026</span> Webfast Studio. Seluruh hak cipta dilindungi.</p>
+        <a class="to-top" href="#top">
+          Kembali ke atas
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        </a>
       </div>
     </div>
   </footer>
 
-  <!-- Tombol WhatsApp mengambang -->
-  <a
-    class="wa-float"
-    href="https://wa.me/6285795125809?text=halo!%2C%20ingin%20konsultasi%20jasa%20pengerjaan%20web%20apakah%20bisa%3F"
-    target="_blank"
-    rel="noopener"
-    aria-label="Konsultasi lewat WhatsApp"
-  >
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
-    </svg>
-  </a>
+  <!-- ============================ FLOATING WHATSAPP ============================ -->
+  <div class="wa-float-container">
+    <div class="wa-tooltip">Konsultasi Gratis via WhatsApp</div>
+    <a
+      class="wa-float"
+      href="https://wa.me/6285795125809?text=halo!%2C%20ingin%20konsultasi%20jasa%20pengerjaan%20web%20apakah%20bisa%3F"
+      target="_blank"
+      rel="noopener"
+      aria-label="Konsultasi langsung lewat WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+      </svg>
+    </a>
+  </div>
 
-  <script src="assets/main.js" defer></script>
+  <script src="assets/main.js?v=1.1" defer></script>
 </body>
 </html>
