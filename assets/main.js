@@ -82,8 +82,20 @@
     });
   }
 
-  /* 4. Active Navigation State on Scroll ---------------------------------- */
+  /* 4. Active Navigation State (Multi-page & In-page) ---------------------- */
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".primary-nav a"));
+  var currentFile = window.location.pathname.split("/").pop() || "index.html";
+  if (currentFile === "") currentFile = "index.html";
+
+  navLinks.forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (!href) return;
+    var targetFile = href.split("#")[0];
+    if (targetFile === currentFile) {
+      link.classList.add("is-active");
+    }
+  });
+
   var observedSections = navLinks
     .map(function (link) {
       var id = link.getAttribute("href");
@@ -97,7 +109,9 @@
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) return;
           navLinks.forEach(function (link) {
-            link.classList.toggle("is-active", link.getAttribute("href") === "#" + entry.target.id);
+            if (link.getAttribute("href").startsWith("#")) {
+              link.classList.toggle("is-active", link.getAttribute("href") === "#" + entry.target.id);
+            }
           });
         });
       },
@@ -370,5 +384,74 @@
     // Mulai animasi running text
     requestAnimationFrame(stepRunningText);
   }
+
+  /* 12. Project Screenshot Slider ----------------------------------------- */
+  var projectSliders = document.querySelectorAll("[data-slider]");
+
+  projectSliders.forEach(function (slider) {
+    var track = slider.querySelector(".slider-track");
+    var slides = slider.querySelectorAll(".slider-slide");
+    var prevBtn = slider.querySelector(".slider-btn--prev");
+    var nextBtn = slider.querySelector(".slider-btn--next");
+    var dots = slider.querySelectorAll(".slider-dot");
+    var stage = slider.querySelector(".slider-stage");
+
+    if (!track || slides.length < 2) return;
+
+    var activeIndex = 0;
+    var startX = null;
+
+    function showSlide(nextIndex) {
+      activeIndex = (nextIndex + slides.length) % slides.length;
+      track.style.transform = "translateX(-" + activeIndex * 100 + "%)";
+
+      dots.forEach(function (dot, i) {
+        dot.classList.toggle("is-active", i === activeIndex);
+      });
+
+      slides.forEach(function (slide, i) {
+        slide.setAttribute("aria-hidden", i === activeIndex ? "false" : "true");
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", function () { showSlide(activeIndex - 1); });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", function () { showSlide(activeIndex + 1); });
+    }
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener("click", function () { showSlide(i); });
+    });
+
+    slider.addEventListener("keydown", function (event) {
+      if (event.key === "ArrowLeft") {
+        showSlide(activeIndex - 1);
+      } else if (event.key === "ArrowRight") {
+        showSlide(activeIndex + 1);
+      }
+    });
+
+    // Geser dengan swipe pada perangkat sentuh
+    if (stage) {
+      stage.addEventListener("pointerdown", function (event) {
+        startX = event.clientX;
+      });
+
+      stage.addEventListener("pointerup", function (event) {
+        if (startX === null) return;
+        var delta = event.clientX - startX;
+        startX = null;
+        if (Math.abs(delta) < 40) return;
+        showSlide(delta < 0 ? activeIndex + 1 : activeIndex - 1);
+      });
+
+      stage.addEventListener("pointercancel", function () { startX = null; });
+    }
+
+    showSlide(0);
+  });
 
 })();
